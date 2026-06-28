@@ -11,5 +11,5 @@ GitOps is a framework where the entire code delivery process is controlled by vi
 - ArgoCD installation \
 Refer thise link https://argo-cd.readthedocs.io/en/stable/ \
 kubectl create namespace argocd\
-kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml\
+kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml \
 - ArgoCD Architecture
