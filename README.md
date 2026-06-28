@@ -23,5 +23,13 @@ kubectl get pods -n argocd -w
 - for port forwarding use the command kubectl port-forward -n argocd svc/argocd-server 8080:443\
   (Port forwarding is a networking technique that allows external devices on the public internet to access a specific computer or service inside a private local network. It works by telling your router to send incoming traffic from a specific "port" directly to a designated device.)
 <img width="824" height="101" alt="image" src="https://github.com/user-attachments/assets/bf6d31d8-c35b-4b8d-a57e-f0e5ec4f740c" />
+
 - To open the tunnel use these steps
-      -    ddd
+  - Edit the service and change the service type from cluster IP (by default) to Nodeport (kubectl edit svc argocd-server -n argocd -o yaml) so that we can access the service from the browser.
+  - minikube service list -n argocd
+  - minikube service argocd-service -n argocd (it will create a tunnel for http and https)
+    - http://127.0.0.1:53220 (for http)
+    - https://127.0.0.1:53221 (for https)
+  
+  
+  
