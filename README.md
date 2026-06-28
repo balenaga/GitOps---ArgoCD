@@ -14,4 +14,6 @@ kubectl create namespace argocd\
 kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 - ArgoCD Architecture
 <img width="743" height="708" alt="image" src="https://github.com/user-attachments/assets/b1480fe6-d9ce-44bb-9fc4-2d3385689bd2" />
-
+-  To check the pods after Argo CD installtion \
+kubectl get pods -n argocd -w \
+ 
