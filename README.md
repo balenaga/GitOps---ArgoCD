@@ -22,3 +22,4 @@ kubectl get pods -n argocd -w
 - To access from the web have to open the tunnel or do port forwarding
 - for port forwarding use the command kubectl port-forward -n argocd svc/argocd-server 8080:443\
   (Port forwarding is a networking technique that allows external devices on the public internet to access a specific computer or service inside a private local network. It works by telling your router to send incoming traffic from a specific "port" directly to a designated device.)
+<img width="824" height="101" alt="image" src="https://github.com/user-attachments/assets/bf6d31d8-c35b-4b8d-a57e-f0e5ec4f740c" />
