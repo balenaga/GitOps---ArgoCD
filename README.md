@@ -31,5 +31,5 @@ kubectl get pods -n argocd -w
     - http://127.0.0.1:53220 (for http)
     - https://127.0.0.1:53221 (for https)
   
-  
+- Dex Server - Argo CD embeds and bundles Dex as part of its installation, for the purpose of delegating authentication to an external identity provider. Multiple types of identity providers are supported (OIDC, SAML, LDAP, GitHub, etc...). SSO configuration of Argo CD requires editing the argocd-cm ConfigMap with Dex connector settings.
   
