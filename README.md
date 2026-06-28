@@ -10,6 +10,6 @@ GitOps is a framework where the entire code delivery process is controlled by vi
     - Act (it uses a reconciliation function and tries to match the actual state to the desired state)
 - ArgoCD installation \
 Refer thise link https://argo-cd.readthedocs.io/en/stable/ \
-kubectl create namespace argocd
+kubectl create namespace argocd\
 kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml\
 - ArgoCD Architecture
