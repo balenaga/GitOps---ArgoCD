@@ -13,5 +13,5 @@ Refer thise link https://argo-cd.readthedocs.io/en/stable/ \
 kubectl create namespace argocd\
 kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 - ArgoCD Architecture
-https://github.com/balenaga/GitOps---ArgoCD/blob/main/argocd_architecture.webp
-https://github.com/balenaga/GitOps---ArgoCD/blob/main/argocd_architecture.webp?raw=true
+<img width="743" height="708" alt="image" src="https://github.com/user-attachments/assets/b1480fe6-d9ce-44bb-9fc4-2d3385689bd2" />
+
