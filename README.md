@@ -8,3 +8,8 @@ GitOps is a framework where the entire code delivery process is controlled by vi
     - Observe (checks the repo for any changes in the desired state)
     - Diff (compared the resources received from the previous step to the actual state of the cluster)
     - Act (it uses a reconciliation function and tries to match the actual state to the desired state)
+- ArgoCD installation
+https://argo-cd.readthedocs.io/en/stable/
+kubectl create namespace argocd
+kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+- ArgoCD Architecture
