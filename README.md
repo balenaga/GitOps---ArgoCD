@@ -38,3 +38,8 @@ kubectl get pods -n argocd -w
 - Notifications controller is a dedicated workload that monitors your Kubernetes cluster for Argo CD application events (such as sync success, failure, or degradation) and dispatches alerts to external platforms like Slack, email, and webhooks
   
 <img width="1115" height="655" alt="image" src="https://github.com/user-attachments/assets/8f249227-b6ea-4ca9-9e2f-c60447c89dc0" />
+<img width="1115" height="655" alt="image" src="https://github.com/user-attachments/assets/c4545c02-9358-422c-82dc-fbc0942c6d0a" />
+<img width="944" height="532" alt="image" src="https://github.com/user-attachments/assets/e8557c06-e687-45b0-bc3a-95b0690cf676" />
+<img width="1208" height="629" alt="image" src="https://github.com/user-attachments/assets/28138ecd-61a8-49ac-8ffa-ec2b24a694f6" />
+
+
