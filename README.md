@@ -42,5 +42,6 @@ kubectl get pods -n argocd -w
 <img width="944" height="532" alt="image" src="https://github.com/user-attachments/assets/e8557c06-e687-45b0-bc3a-95b0690cf676" />
 <img width="1208" height="629" alt="image" src="https://github.com/user-attachments/assets/28138ecd-61a8-49ac-8ffa-ec2b24a694f6" />
 <img width="1005" height="656" alt="image" src="https://github.com/user-attachments/assets/cae15930-8c01-41ad-a392-8f3e6161f94f" />
+<img width="1172" height="604" alt="image" src="https://github.com/user-attachments/assets/8e044f13-741b-4598-a5e3-5f205df7c37a" />
 
 
