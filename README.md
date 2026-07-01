@@ -37,3 +37,4 @@ kubectl get pods -n argocd -w
 - API Server (deployed as the argocd-server pod) is the central gateway that sits between users, external tools, and the internal components of ArgoCD. It functions as a dual gRPC and REST server, exposing the endpoints consumed by the Web UI, CLI, and automated CI/CD pipelines.
 - Notifications controller is a dedicated workload that monitors your Kubernetes cluster for Argo CD application events (such as sync success, failure, or degradation) and dispatches alerts to external platforms like Slack, email, and webhooks
   
+<img width="1115" height="655" alt="image" src="https://github.com/user-attachments/assets/8f249227-b6ea-4ca9-9e2f-c60447c89dc0" />
