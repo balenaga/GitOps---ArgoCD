@@ -32,4 +32,8 @@ kubectl get pods -n argocd -w
     - https://127.0.0.1:53221 (for https)
   
 - Dex Server - Argo CD embeds and bundles Dex as part of its installation, for the purpose of delegating authentication to an external identity provider. Multiple types of identity providers are supported (OIDC, SAML, LDAP, GitHub, etc...). SSO configuration of Argo CD requires editing the argocd-cm ConfigMap with Dex connector settings.
+- Application Controller is the core engineering engine of ArgoCD that continuously monitors running Kubernetes applications and reconciles their live state with the desired state specified in a Git repository. Operating as a Kubernetes StatefulSet, it drives the actual reconciliation and deployment loop that forms the foundation of the GitOps workflow
+- Repo Server (argocd-repo-server) is an internal microservice responsible for maintaining a local cache of your Git/Helm repositories and generating the final Kubernetes manifests. It acts as a bridge between your source control and the deployment engine.
+- API Server (deployed as the argocd-server pod) is the central gateway that sits between users, external tools, and the internal components of ArgoCD. It functions as a dual gRPC and REST server, exposing the endpoints consumed by the Web UI, CLI, and automated CI/CD pipelines.
+- Notifications controller is a dedicated workload that monitors your Kubernetes cluster for Argo CD application events (such as sync success, failure, or degradation) and dispatches alerts to external platforms like Slack, email, and webhooks
   
